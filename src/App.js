@@ -1,15 +1,18 @@
-
-import './App.css';
+import React from 'react';
+import About from './objects/About';
+import Logo from './objects/Logo';
+import Menu from './objects/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a href='#' className="about">ABOUT</a>
-        
-      </header>
-    </div>
+    <>
+      <Logo />
+      <About />
+      <Menu />
+    </>
   );
 }
+
+
 
 export default App;

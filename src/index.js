@@ -4,7 +4,6 @@ import './style/settings/colors.css'
 import './style/generic/reset.css'
 import './style/elements/base.css'
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,4 +12,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-reportWebVitals();
