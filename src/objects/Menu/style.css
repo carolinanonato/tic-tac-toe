@@ -1,0 +1,20 @@
+.burger {
+  display: block;
+  text-indent: -9999px;
+}
+
+.burger::after,
+.burger::before,
+.burger > .center {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--color-fourth);
+  margin-bottom: 5px;
+}
+
+.burger::after {
+  margin-bottom: 0;
+}
