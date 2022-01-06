@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header'
-import Board from './objects/Board'
+import Board from './objects/Board';
+import Player from './objects/Player';
+
 
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <>
       <Header />
       <Board />
+      <Player player='o'/>
     </>
   );
 }
