@@ -1,0 +1,13 @@
+.app {
+  text-align: center;
+}
+
+.app > .board {
+  width: 70vw;
+  height: 70vw;
+  display: inline-block;
+}
+
+.app > .header {
+  margin: 0 auto 55px;
+}

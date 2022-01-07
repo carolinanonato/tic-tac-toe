@@ -1,19 +1,16 @@
 import React from 'react';
+import './App.css';
+import Hashtag from './components/Hashtag';
 import Header from './components/Header'
-import Board from './objects/Board';
-import Player from './objects/Player';
 
 
-
-function App() {
-  return (
-    <>
+const App = () => (
+    <main className='app'>
       <Header />
-      <Board />
-      <Player player='o'/>
-    </>
+      <Hashtag />
+    </main>
   );
-}
+
 
 
 

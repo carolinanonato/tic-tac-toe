@@ -1,9 +1,13 @@
 import React from 'react';
 import './style.css'
 
-const Board = () => {
+const Board = ({children}) => {
    return (
-     <article className='board'></article>
+     <article className='board'>
+       
+       {children}
+       
+     </article>
    )
 }
 
