@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css'
 
-const About = () => {
+const About = ({className=""}) => {
    return (
-     <a href='#to-do' className="about">ABOUT</a>
+     <a href='#to-do' className={`about ${className}`}>ABOUT</a>
    )
 }
 
