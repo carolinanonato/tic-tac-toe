@@ -6,6 +6,7 @@
   width: 70vw;
   height: 70vw;
   display: inline-block;
+  margin-bottom: 40px;
 }
 
 .app > .header {

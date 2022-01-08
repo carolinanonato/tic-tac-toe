@@ -7,7 +7,7 @@ import './style.css'
 const Checkbox = ({id = '', value = '', content =''}) => (
     <>
         <Input  id={id}  value={value} type="checkbox" content={content}/>
-        <Label htmlFor={id} content={content}/>
+        <Label className="checkbox" htmlFor={id} content={content}/>
     </>
 );
 
