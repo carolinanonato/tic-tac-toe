@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 import Hashtag from './components/Hashtag';
@@ -10,22 +10,28 @@ import Profile from './objects/Profile';
 import UserProfile from './components/UserProfile';
 
 
+const App = () => { 
+   const [activeAbout, setActiveAbout] = useState("")
 
+  
+const handleClick = () => {
+  setActiveAbout("active")
+}
 
-
-const App = () => (
+  return (
     <main className='app'>
-      <Header />
+      <Header onClick={handleClick}/>
       <Hashtag />
       <Checkbox  id="show"  value="show" type="checkbox" content="Show events"/>
      
 
-     <Profile className="">
+     <Profile className={activeAbout}>
       <HeaderInternal />
       <UserProfile />
      </Profile>
     </main>
-  );
+  )
+};
 
 
 

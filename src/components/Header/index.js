@@ -4,11 +4,11 @@ import About from '../../objects/About'
 import Menu from '../../objects/Menu'
 import './style.css'
 
-const Header = () => (
+const Header = ({onClick}) => (
     <header className="header">
         <Logo />
-        <About />
-        <Menu />
+        <About onClick={onClick}/>
+        <Menu onClick={onClick}/>
 
     </header>
 )
