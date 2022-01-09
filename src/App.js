@@ -5,6 +5,7 @@ import Header from './components/Header'
 import About from './objects/About';
 import Checkbox from './objects/Checkbox';
 import IconClose from './objects/IconClose';
+import Logo from './objects/Logo';
 import Profile from './objects/Profile';
 
 
@@ -18,6 +19,7 @@ const App = () => (
      
 
      <Profile>
+       <Logo light />
        <About className="light"/>
        <IconClose />
      </Profile>

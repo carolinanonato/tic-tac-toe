@@ -1,7 +1,11 @@
 import React from 'react';
 import Cute from '../../img/cutelogo2.png';
 import './style.css'
+import LogoLight from '../../img/cutelogo2_white.png'
 
-const Logo = () => (<img src={Cute} alt="Cute Logo" className='logo'/>);
+const Logo = ({light}) => (<img className="logo" 
+src={light ? LogoLight : Cute} 
+alt="Cute Logo" 
+className='logo'/>);
 
 export default Logo;
