@@ -13,10 +13,10 @@ import UserProfile from './components/UserProfile';
 const App = () => { 
    const [activeAbout, setActiveAbout] = useState("")
 
-  
-const handleClick = () => {
-  setActiveAbout("active")
-}
+
+  const handleClick = () => setActiveAbout("active");
+  const handleClickRemove = () => setActiveAbout("");
+
 
   return (
     <main className='app'>
@@ -26,7 +26,7 @@ const handleClick = () => {
      
 
      <Profile className={activeAbout}>
-      <HeaderInternal />
+      <HeaderInternal onClick={handleClickRemove}/>
       <UserProfile />
      </Profile>
     </main>
