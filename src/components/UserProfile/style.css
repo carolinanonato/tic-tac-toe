@@ -19,5 +19,13 @@
 
 .user-profile > .description {
   width: 70%;
+  margin: 0 auto var(--spacing-big);
+  line-height: 1.6;
+}
+
+.user-profile > .social {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
   margin: 0 auto;
 }
