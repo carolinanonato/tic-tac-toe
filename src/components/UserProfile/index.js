@@ -4,12 +4,12 @@ import Avatar from '../../objects/Avatar';
 import Pic from '../../img/avatar.png'
 
 const UserProfile = () => (
-    <dl>
-        <dd>
+    <dl className='user-profile'>
+        <dd className='avatar'>
         <Avatar src={Pic} alt="Carolinas pic"/>
         </dd>
-        <dt>Carolina Nonato</dt>
-        <dd>
+        <dt className="title">Carolina Nonato</dt>
+        <dd className="description">
            Former journalist in love with frontend development. 
         </dd>
     </dl>
