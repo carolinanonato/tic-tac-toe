@@ -20,7 +20,7 @@ const App = () => (
       <Checkbox  id="show"  value="show" type="checkbox" content="Show events"/>
      
 
-     <Profile>
+     <Profile className="">
       <HeaderInternal />
       <UserProfile />
      </Profile>

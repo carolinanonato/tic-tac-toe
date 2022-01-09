@@ -1,8 +1,8 @@
 import React from "react";
 import './style.css'
 
-const Profile = ({children})=> (
-     <article className="profile">{children}</article>
+const Profile = ({children, className=''})=> (
+     <article className={`profile ${className}`}>{children}</article>
 );
 
 export default Profile

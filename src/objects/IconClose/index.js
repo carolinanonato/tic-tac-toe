@@ -2,7 +2,7 @@ import React from "react";
 import './style.css'
 
 const IconClose = () => (
-    <a href="" className="icon-close">
+    <a href="#todo" className="icon-close">
         <span className="content">Close</span>
     </a>
 );
