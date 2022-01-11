@@ -2,13 +2,13 @@
   display: none;
 }
 
-.label {
+.label-game {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
-.label::before {
+.label-game::before {
   content: "";
   display: inline-block;
   border: 3px solid var(--color-fourth);
@@ -20,6 +20,6 @@
   margin-right: 5px;
 }
 
-.input-game:checked + .label::before {
+.input-game:checked + .label-game::before {
   background: var(--color-first);
 }
