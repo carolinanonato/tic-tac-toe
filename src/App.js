@@ -6,7 +6,7 @@ import Header from './components/Header'
 import HeaderInternal from './components/HeaderInternal';
 
 import Checkbox from './objects/Checkbox';
-import Profile from './objects/Profile';
+import LayerDark from './objects/LayerDark';
 import UserProfile from './components/UserProfile';
 
 
@@ -25,10 +25,10 @@ const App = () => {
       <Checkbox  id="show"  value="show" type="checkbox" content="Show events"/>
      
 
-     <Profile className={activeAbout}>
+     <LayerDark className={activeAbout}>
       <HeaderInternal onClick={handleClickRemove}/>
       <UserProfile />
-     </Profile>
+     </LayerDark>
     </main>
   )
 };
