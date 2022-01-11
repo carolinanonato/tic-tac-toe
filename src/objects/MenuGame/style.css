@@ -1,11 +1,11 @@
-.burger {
+.menu-game {
   display: block;
   text-indent: -9999px;
 }
 
-.burger::after,
-.burger::before,
-.burger > .center {
+.menu-game::after,
+.menu-game::before,
+.menu-game > .center {
   content: "";
   display: block;
   height: 4px;
@@ -15,6 +15,6 @@
   margin-bottom: 5px;
 }
 
-.burger::after {
+.menu-game::after {
   margin-bottom: 0;
 }
