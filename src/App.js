@@ -19,7 +19,7 @@ const App = () => {
 
 
   return (
-    <main className='app'>
+    <main id="main" className='app'>
       <HeaderGame onClick={handleClick}/>
       <HashtagGame />
       <InputCheckbox  id="show"  value="show" type="checkbox" content="Show events"/>
