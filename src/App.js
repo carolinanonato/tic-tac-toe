@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Hashtag from './components/Hashtag';
+import HashtagGame from './components/HashtagGame';
 import Header from './components/Header'
 import HeaderInternal from './components/HeaderInternal';
 
@@ -21,7 +21,7 @@ const App = () => {
   return (
     <main className='app'>
       <Header onClick={handleClick}/>
-      <Hashtag />
+      <HashtagGame />
       <InputCheckbox  id="show"  value="show" type="checkbox" content="Show events"/>
      
 
