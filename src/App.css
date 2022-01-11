@@ -15,3 +15,7 @@
 .app > .header-game {
   margin: 0 auto 55px;
 }
+
+.app > .label-game {
+  margin-bottom: var(--spacing-big);
+}

@@ -8,7 +8,7 @@ import HeaderInternal from './components/HeaderInternal';
 import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
 import UserProfile from './components/UserProfile';
-import TagGame from './objects/TagGame';
+import HistoryGame from './components/HistoryGame';
 
 
 const App = () => { 
@@ -25,7 +25,7 @@ const App = () => {
       <HashtagGame />
       <InputCheckbox  id="show"  value="show" type="checkbox" content="Show events"/>
      
-     <TagGame content="Added x" />
+     <HistoryGame />
 
      <LayerDark className={activeAbout}>
       <HeaderInternal onClick={handleClickRemove}/>
