@@ -1,15 +1,15 @@
-.header {
+.header-game {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 34px;
 }
 
-.header > .menu-game {
+.header-game > .menu-game {
   width: 25px;
 }
 
-.header > .about {
+.header-game > .about {
   margin-left: auto;
   margin-right: 10px;
 }
