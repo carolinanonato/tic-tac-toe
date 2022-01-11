@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-Made following the amazing Collab Code React Course!
+Made following the amazing Collab Code React Course! Thanks Marco Bruno!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
