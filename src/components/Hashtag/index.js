@@ -1,12 +1,12 @@
 import React from "react";
 import './style.css'
-import Board from "../../objects/Board";
+import CardGame from "../../objects/CardGame";
 import Player from "../../objects/Player";
 
 
 
 const Hashtag = () => (
-<Board >
+<CardGame >
       <ul className="hashtag">
       <li className="item"><Player player='x' /> </li>
       <li className="item"><Player player='o' /> </li>
@@ -20,7 +20,7 @@ const Hashtag = () => (
       <li className="item"><Player player='x' /> </li>
       <li className="item"><Player player='x' /> </li>
       </ul>
-     </Board>
+     </CardGame>
 
 );
 

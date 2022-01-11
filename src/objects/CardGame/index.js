@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css'
 
-const Board = ({children}) => {
+const CardGame = ({children}) => {
    return (
-     <article className='board'>
+     <article className='card-game'>
        
        {children}
        
@@ -11,4 +11,4 @@ const Board = ({children}) => {
    )
 }
 
-export default Board;
+export default CardGame;
