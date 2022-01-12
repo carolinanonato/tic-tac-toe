@@ -4,10 +4,17 @@ import LabelGame from '../LabelGame'
 import './style.css'
 
 
-const InputCheckbox = ({id = '', value = '', content =''}) => (
+const InputCheckbox = ({id = '', value = '', content ='', onClick }) => (
     <>
-        <InputGame  id={id}  value={value} type="checkbox" content={content}/>
-        <LabelGame className="checkbox" htmlFor={id} content={content}/>
+        <InputGame  id={id}  
+        value={value} 
+        type="checkbox" 
+        content={content}/>
+        
+        <LabelGame onClick={onClick} 
+        className="checkbox" 
+        htmlFor={id} 
+        content={content}/>
     </>
 );
 
