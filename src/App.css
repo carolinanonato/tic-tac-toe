@@ -5,7 +5,7 @@
   height: 100vh;
 }
 
-.app > .card-game {
+.app .card-game {
   width: 70vw;
   height: 70vw;
   display: inline-block;
@@ -16,21 +16,39 @@
   min-height: 260px;
 }
 
-.app > .header-game {
+.app .header-game {
   margin: 0 auto 55px;
   min-width: 260px;
 }
 
-.app > .label-game {
+.app .label-game {
   margin-bottom: var(--spacing-big);
   display: flex;
   justify-content: center;
 }
 
-.app > .history-game {
+.app .history-game {
   display: none;
 }
 
-.app > .input-game:checked ~ .history-game {
+.app .input-game:checked ~ .history-game {
   display: block;
+}
+
+@media (min-width: 740px) {
+  .app > .wrapper-hashtagHistory {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .app .card-game {
+    margin-right: 40px;
+  }
+
+  .app .label-game {
+    position: absolute;
+    top: 400px;
+    left: 115px;
+  }
 }

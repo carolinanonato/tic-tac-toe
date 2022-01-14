@@ -9,6 +9,7 @@ import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
 import UserProfile from './components/UserProfile';
 import HistoryGame from './components/HistoryGame';
+import WrapperHashtagHistory from './objects/WrapperHashtagHistory';
 
 
 const App = () => { 
@@ -27,10 +28,13 @@ const App = () => {
   return (
     <main id="main" className='app'>
       <HeaderGame onClick={handleClickAdd}/>
-      <HashtagGame callback={addHistory}/>
-      <InputCheckbox  id="show"  value="show" type="checkbox" content="Show events"/>
-     
-     <HistoryGame history ={history} />
+
+      <WrapperHashtagHistory>
+        <HashtagGame callback={addHistory}/>
+        <InputCheckbox  id="show"  value="show" type="checkbox" content="Show events"/>
+      
+      <HistoryGame history ={history} />
+     </WrapperHashtagHistory>
 
      <LayerDark className={activeAbout}>
       <HeaderInternal onClick={handleClickRemove}/>
