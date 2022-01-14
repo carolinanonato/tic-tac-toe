@@ -29,3 +29,18 @@
   width: 60%;
   margin: 0 auto;
 }
+
+@media (min-width: 740px) {
+  .user-profile .avatar-profile {
+    width: 150px;
+    height: 150px;
+  }
+
+  .user-profile > .title {
+    font-size: 38px;
+  }
+
+  .user-profile > .social {
+    width: 30%;
+  }
+}
