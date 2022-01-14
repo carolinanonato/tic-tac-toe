@@ -13,3 +13,17 @@
   margin-left: auto;
   margin-right: 10px;
 }
+
+@media (min-width: 740px) {
+  .header-game {
+    background-color: var(--color-tenth);
+  }
+
+  .header-game > .about {
+    font-size: 18px;
+  }
+
+  .header-game > .menu-game {
+    width: 30px;
+  }
+}
