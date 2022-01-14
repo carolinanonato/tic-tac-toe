@@ -10,6 +10,8 @@
   height: 70vw;
   display: inline-block;
   margin-bottom: 40px;
+  max-width: 330px;
+  max-height: 330px;
 }
 
 .app > .header-game {
