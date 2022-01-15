@@ -4,7 +4,7 @@ import LabelGame from '../LabelGame'
 import './style.css'
 
 
-const InputCheckbox = ({id = '', value = '', content ='',  }) => (
+const InputCheckbox = ({onClick, id = '', value = '', content ='',  }) => (
     <>
         <InputGame  id={id}  
         value={value} 
@@ -13,7 +13,8 @@ const InputCheckbox = ({id = '', value = '', content ='',  }) => (
         <LabelGame 
         className="checkbox" 
         htmlFor={id} 
-        content={content}/>
+        content={content} 
+        onClick={onClick}/>
     </>
 );
 

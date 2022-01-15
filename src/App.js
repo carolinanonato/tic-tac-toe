@@ -15,6 +15,7 @@ import WrapperHashtagHistory from './objects/WrapperHashtagHistory';
 const App = () => { 
    const [activeAbout, setActiveAbout] = useState("")
   const [history, setHistory] = useState([])
+  const [active, setActive] = useState(false)
 
 
   const handleClickAdd = () => setActiveAbout("active");
@@ -25,13 +26,17 @@ const App = () => {
   
   };
 
+  const showHideHistory = () => {
+   setActive(old => !!!old);
+  }
+
   return (
     <main id="main" className='app'>
       <HeaderGame onClick={handleClickAdd}/>
 
-      <WrapperHashtagHistory>
+      <WrapperHashtagHistory active={active}>
         <HashtagGame callback={addHistory}/>
-        <InputCheckbox  id="show"  value="show" type="checkbox" content="Show events"/>
+        <InputCheckbox onClick={showHideHistory} id="show"  value="show" type="checkbox" content="Show events"/>
       
       <HistoryGame history ={history} />
      </WrapperHashtagHistory>
